@@ -51,13 +51,13 @@ const AddContact = () => {
         <form id="addcontact" onSubmit={formOnSubmit}>
             <h2>{current ? 'Edit Contact' : 'Add Contact'}</h2>
             <div className="form-group">
-                <input type="text" name="name" id="name" placeholder="Name" value={name} onChange={onChangeActions} className="form-control" />
+                <input type="text" name="name" id="name" placeholder="Name" value={name} onChange={onChangeActions} className="form-control" required />
             </div>
             <div className="form-group">
-                <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={onChangeActions} className="form-control" />
+                <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={onChangeActions} className="form-control" required />
             </div>
             <div className="form-group">
-                <input type="tel" name="phone" id="phone" placeholder="Phone" value={phone} onChange={onChangeActions} className="form-control" />
+                <input type="tel" name="phone" id="phone" placeholder="Phone" value={phone} onChange={onChangeActions} className="form-control" required />
             </div>
             <h5>Contact Type</h5>
             <div className="form-check form-check-inline">
