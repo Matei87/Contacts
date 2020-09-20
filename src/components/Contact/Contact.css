@@ -1,0 +1,36 @@
+.card {
+    border-radius: .25rem; margin: 2rem 0;
+}
+.card-header {
+    display: flex; justify-content: space-between; align-items: center;
+    border: none !important;
+}
+.card .card-header h4 {
+    margin: 0; color: var(--primary-color);
+    font-size: 1.85rem; font-weight: 600;
+}
+.card .card-header .badge {
+    display: flex; justify-content: center; align-content: center;
+    padding: .75rem; font-size: 1.6rem; font-weight: 600;
+}
+.card-footer {
+    border: none !important;
+}
+.card-body {
+    font-size: 1.75rem;
+}
+.card-body li {
+    display: flex; align-items: center;
+}
+.card-body li svg {
+    margin-right: .5rem;
+}
+.card-footer button {
+    padding: .5rem 1rem; font-size: 1.5rem;
+}
+.card-footer button:first-child {
+    margin-right: .5rem;
+}
+.card-header, .card-body, .card-footer {
+    background: var(--background-color-secondary) !important;
+}

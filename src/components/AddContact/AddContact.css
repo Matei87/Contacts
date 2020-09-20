@@ -1,0 +1,27 @@
+form#addcontact h2 {
+    text-align: center; margin-bottom: 1.6rem;
+    color: var(--primary-color);
+    font-size: 2.4rem; font-weight: 600; 
+}
+form#addcontact input.form-control {
+    font-size: 1.75rem; height: 3.5rem;
+    margin: 1.92rem 0;
+}
+form#addcontact input.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+form#addcontact h5 {
+    font-size: 1.6rem;
+}
+form#addcontact .form-check {
+    margin: 1.92rem 0;
+}
+form#addcontact .form-check-label {
+    font-size: 1.4rem; font-weight: 500;
+    margin-right: .5rem;
+}
+form#addcontact button.btn {
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem;
+}

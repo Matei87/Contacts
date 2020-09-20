@@ -1,0 +1,15 @@
+nav {
+    background: var(--background-color-primary) !important;
+    color: var(--primary-color);
+    padding: 1.75rem !important;
+    margin-bottom: 2rem !important;
+}
+
+nav h1 {
+    margin: 0; font-size: 3rem;
+    display: flex; align-content: center;
+}
+nav h1 svg {
+    margin-right: .5rem;
+    font-size: 3.7rem;
+}

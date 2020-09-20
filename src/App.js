@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import ContactState from './context/ContactState'
+import Navbar from './components/Navbar/Navbar';
+import AddContact from './components/AddContact/AddContact';
+import FindContact from './components/FindContact/FindContact'
+import Contacts from './components/Contacts/Contacts'
+import Footer from './components/Footer/Footer';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <ContactState>
+      <Navbar />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <AddContact />
+          </div>
+          <div className="col-md-6">
+            <FindContact />
+            <Contacts />
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </ContactState>
+  )
+};
 
 export default App;
