@@ -7,6 +7,9 @@ form#addcontact input.form-control {
     font-size: 1.75rem; height: 3.5rem;
     margin: 1.92rem 0;
 }
+form#addcontact input:required {
+    box-shadow: none;
+}
 form#addcontact input.form-control:focus {
     box-shadow: none;
     border-color: var(--primary-color);
