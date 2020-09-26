@@ -26,7 +26,7 @@ const Contact = ({ contact }) => {
             </div>
             <div className="card-footer">
                 <button className="btn btn-primary" onClick={() => setCurrentContact(contact)}>Edit</button>
-                <button className="btn btn-secondary" onClick={onDelete.bind(this, id)}>Delete</button>
+                <button className="btn btn-secondary" onClick={() => deleteContact(id)}>Delete</button>
             </div>
         </div>
     )
