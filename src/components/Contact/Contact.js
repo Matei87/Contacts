@@ -8,10 +8,6 @@ const Contact = ({ contact }) => {
     const { deleteContact, setCurrentContact } = useContext(ContactContext);
     const { id, name, email, phone, type } = contact;
 
-    const onDelete = (id) => {
-        deleteContact(id);
-    }
-
     return (
         <div className="card">
             < div className="card-header">
